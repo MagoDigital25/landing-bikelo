@@ -103,7 +103,7 @@ class CustomNavbar extends HTMLElement {
         </button>
         <ul>
           <li><a href="#features" class="active">Solución</a></li>
-          <li><a href="#pricing">Precios</a></li>
+          <li hidden><a href="#pricing">Precios</a></li>
           <li><a href="#testimonials">Casos de éxito</a></li>
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#demo" class="cta-button">Demo Gratis</a></li>
