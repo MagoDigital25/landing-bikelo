@@ -102,7 +102,7 @@ class CustomNavbar extends HTMLElement {
           <i data-feather="menu"></i>
         </button>
         <ul>
-          <li><a href="#features" class="active">Solución</a></li>
+          <li><a href="#portada" class="active">Solución</a></li>
           <li hidden><a href="#pricing">Precios</a></li>
           <li><a href="#funciones">¿Que hace?</a></li>
           <li><a href="#beneficios">Beneficios</a></li>
