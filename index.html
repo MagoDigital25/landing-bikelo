@@ -1,19 +1,209 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikelo - Automatiza tu taller de ciclismo con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFB700',
+                        secondary: '#000814',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter'] bg-white text-secondary">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-secondary to-gray-900 text-white py-20 md:py-32 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">De 1 Hora a 3 Minutos en Presupuestos</h1>
+                <p class="text-xl text-gray-300">La Plataforma IA que Todo Taller de Ciclismo Soñaba Tener</p>
+                <p class="text-gray-300">Automatiza tu flujo de trabajo, reduce errores y aumenta tus márgenes con nuestra solución inteligente diseñada específicamente para talleres de ciclismo.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#demo" class="bg-primary hover:bg-yellow-500 text-secondary font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105">Agendar Demo Gratuita</a>
+                    <a href="#" class="border border-white hover:bg-white hover:text-secondary text-white font-semibold px-6 py-3 rounded-lg transition-all flex items-center gap-2">
+                        <i data-feather="play-circle"></i>
+                        Ver Video Explicativo
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="http://static.photos/technology/1024x576/42" alt="Dashboard Bikelo" class="rounded-xl shadow-2xl border-2 border-primary">
+                <div class="absolute -bottom-6 -left-6 bg-primary text-secondary px-4 py-2 rounded-lg font-bold shadow-lg">Plataforma en acción</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">El Problema que Todos Conocemos (Pero Nadie Soluciona)</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="clock" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pérdida de Tiempo</h3>
+                    <p class="text-gray-600">Los talleres pierden hasta 8 horas semanales en procesos manuales de presupuestos y gestión de inventario.</p>
+                </div>
+                
+                <!-- Problem 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="dollar-sign" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fuga de Dinero</h3>
+                    <p class="text-gray-600">Errores en presupuestos y pérdida de oportunidades de venta por falta de visibilidad del inventario.</p>
+                </div>
+                
+                <!-- Problem 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="alert-circle" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estrés y Errores</h3>
+                    <p class="text-gray-600">Equipos sobrecargados cometiendo errores que dañan la reputación del taller.</p>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+                            <img src="http://static.photos/people/200x200/1" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos M.</h4>
+                            <p class="text-sm text-gray-500">Taller Ruedas Locas, Madrid</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Perdíamos más tiempo haciendo presupuestos que arreglando bicis. Era insostenible."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+                            <img src="http://static.photos/people/200x200/2" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lucía V.</h4>
+                            <p class="text-sm text-gray-500">BikeLab, Barcelona</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Nuestros márgenes mejoraron un 15% desde que implementamos Bikelo. Revolucionario."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 px-4" id="demo">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">La Solución que Cambiará tu Forma de Trabajar</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-primary transition-all">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Presupuestos Automáticos Inteligentes</h3>
+                    <p class="text-gray-600">Genera presupuestos precisos en minutos analizando fotos del daño con nuestra IA especializada.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-primary transition-all">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Comparador de Precios con IA</h3>
+                    <p class="text-gray-600">Optimiza tus márgenes comparando precios de repuestos en tiempo real con proveedores certificados.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-primary transition-all">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="box" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gestión de Inventario Predictiva</h3>
+                    <p class="text-gray-600">Nuestra IA anticipa qué piezas necesitarás basándose en patrones estacionales y demanda histórica.</p>
+                </div>
+            </div>
+
+            <!-- Demo Form -->
+            <div class="bg-secondary text-white rounded-xl overflow-hidden shadow-xl max-w-3xl mx-auto">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 md:p-10 bg-gradient-to-br from-primary to-yellow-500 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4">¿Listo para la revolución?</h3>
+                        <p class="mb-6">Agenda una demo personalizada y descubre cómo Bikelo puede transformar tu taller.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4"></i> Sin compromiso</li>
+                            <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4"></i> 100% personalizada</li>
+                            <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4"></i> Resultados en 15 días</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 md:p-10 bg-white text-secondary">
+                        <h3 class="text-xl font-bold mb-6">Agenda tu Demo</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-1">Nombre del Taller</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-1">Correo Electrónico</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium mb-1">Teléfono</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-yellow-500 text-secondary font-semibold py-3 px-4 rounded-lg transition-colors">Reservar Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-center text-gray-500 mb-8">Confían en nosotros</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+                <img src="http://static.photos/black/200x200/1" alt="Cliente 1" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                <img src="http://static.photos/black/200x200/2" alt="Cliente 2" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                <img src="http://static.photos/black/200x200/3" alt="Cliente 3" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                <img src="http://static.photos/black/200x200/4" alt="Cliente 4" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
 </html>

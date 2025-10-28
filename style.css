@@ -1,28 +1,53 @@
-body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+/* Custom styles that complement Tailwind */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-h1 {
-	font-size: 16px;
-	margin-top: 0;
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
-p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+.delay-100 {
+    animation-delay: 0.1s;
 }
 
-.card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
+.delay-200 {
+    animation-delay: 0.2s;
 }
 
-.card p:last-child {
-	margin-bottom: 0;
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom button hover effect */
+.btn-hover {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+}
+
+.btn-hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.btn-hover:hover::after {
+    transform: translateX(0);
 }
