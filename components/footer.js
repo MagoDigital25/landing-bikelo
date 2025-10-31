@@ -92,37 +92,16 @@ class CustomFooter extends HTMLElement {
               <a href="#"><i data-feather="youtube"></i></a>
             </div>
           </div>
-          
           <div>
-            <h3 class="footer-heading">Producto</h3>
+            <h3 class="footer-heading">Navegación</h3>
             <div class="footer-links">
-              <a href="#">Funcionalidades</a>
-              <a href="#">Precios</a>
-              <a href="#">Casos de éxito</a>
-              <a href="#">Integraciones</a>
+              <a href="#portada">Solución</a>
+              <a href="#funciones">¿Qué hace?</a>
+              <a href="#beneficios">Beneficios</a>
+              <a href="#demo">Demo Gratis</a>
             </div>
           </div>
-          
-          <div>
-            <h3 class="footer-heading">Recursos</h3>
-            <div class="footer-links">
-              <a href="#">Blog</a>
-              <a href="#">Centro de ayuda</a>
-              <a href="#">Webinars</a>
-              <a href="#">API</a>
-            </div>
-          </div>
-          
-          <div>
-            <h3 class="footer-heading">Empresa</h3>
-            <div class="footer-links">
-              <a href="#">Sobre nosotros</a>
-              <a href="#">Trabaja con nosotros</a>
-              <a href="#">Contacto</a>
-              <a href="#">Socios</a>
-            </div>
-          </div>
-        </div>
+</div>
         
         <div class="copyright">
           &copy; ${new Date().getFullYear()} Bikelo. Todos los derechos reservados.
