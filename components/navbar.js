@@ -95,8 +95,9 @@ class CustomNavbar extends HTMLElement {
       </style>
       <nav>
         <a href="/" class="logo">
-          <img src="https://huggingface.co/spaces/MagoDigi/bikelo-log-stica-ciclista-en-ia/resolve/main/images/Logotipo%20de%20Marca%20bikelo%20App%20(4).svg" alt="Bikelo Logo" class="h-8">
-</a>
+          <i data-feather="bicycle"></i>
+          Bikelo
+        </a>
         <button class="mobile-menu-button">
           <i data-feather="menu"></i>
         </button>

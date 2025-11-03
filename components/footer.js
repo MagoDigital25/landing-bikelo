@@ -81,8 +81,9 @@ class CustomFooter extends HTMLElement {
         <div class="footer-container">
           <div>
             <div class="footer-logo">
-              <img src="https://huggingface.co/spaces/MagoDigi/bikelo-log-stica-ciclista-en-ia/resolve/main/images/Logotipo%20de%20Marca%20bikelo%20App%20(4).svg" alt="Bikelo Logo" class="h-8">
-</div>
+              <i data-feather="bicycle"></i>
+              Bikelo
+            </div>
             <p class="text-gray-400">La plataforma IA que revoluciona la gestión de talleres de ciclismo.</p>
             <div class="social-links">
               <a href="#"><i data-feather="twitter"></i></a>
