@@ -95,7 +95,7 @@ class CustomNavbar extends HTMLElement {
       </style>
       <nav>
         <a href="/" class="logo">
-          <img src="https://huggingface.co/spaces/MagoDigi/bikelo-log-stica-ciclista-en-ia/resolve/main/images/Logotipo%20de%20Marca%20bikelo%20App_Blanco_Lucuma_lo.svg" alt="Bikelo" style="height:30px;">
+          <img src="https://huggingface.co/spaces/MagoDigi/bikelo-log-stica-ciclista-en-ia/resolve/main/images/Logotipo%20de%20Marca%20bikelo%20App_Blanco_Lucuma_lo.svg" alt="Bikelo" style="height:40px;">
 </a>
         <button class="mobile-menu-button">
           <i data-feather="menu"></i>
@@ -105,6 +105,7 @@ class CustomNavbar extends HTMLElement {
           <li hidden><a href="#pricing">Precios</a></li>
           <li><a href="#funciones">¿Que hace?</a></li>
           <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#faq">Preguntas</a></li>
           <li><a href="#demo" class="cta-button">Demo Gratis</a></li>
         </ul>
       </nav>
