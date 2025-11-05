@@ -1,5 +1,5 @@
 ---
-title: Bikelo - Presupuestos con IA para talleres/tiendas de ciclismo. 🚴‍♂️
+title: Bikelo - Presupuestos con IA para talleres de ciclismo. 🚴‍♂️
 colorFrom: purple
 colorTo: purple
 emoji: 🚀
