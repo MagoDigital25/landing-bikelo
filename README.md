@@ -1,7 +1,7 @@
 ---
 title: Bikelo - Presupuestos con IA para talleres de ciclismo. 🚴‍♂️
 colorFrom: yellow
-colorTo: gray
+colorTo: yellow
 emoji: 🚀
 sdk: static
 pinned: false
