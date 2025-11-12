@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const phone = document.getElementById('phone').value;
 
             // URL del webhook de Make
-            const webhookUrl = 'https://hook.eu2.make.com/k7nknc1ahgjv52a5k3xr6zye9234vn6w';
+            const webhookUrl = 'https://hook.eu2.make.com/a16fg7o2i2nyh5s220ywhplaxnhxjx1x';
 
             // Enviar datos al webhook
             fetch(webhookUrl, {
@@ -168,8 +168,8 @@ document.querySelectorAll('.faq-item').forEach(item => {
     document.querySelectorAll('.faq-icon').forEach(el => {
       if (el !== icon) {
         el.setAttribute('data-feather', 'chevron-down');
-        feather.replace();
-      }
+        // Remove feather.replace() since we're using SVG icons directly now
+}
     });
     
     // Toggle current item

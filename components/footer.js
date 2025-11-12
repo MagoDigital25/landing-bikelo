@@ -85,12 +85,11 @@ class CustomFooter extends HTMLElement {
 </div>
             <p class="text-gray-400">La plataforma IA que revoluciona la gestión de talleres de ciclismo.</p>
             <div class="social-links">
-              <a href="#"><i data-feather="twitter"></i></a>
-              <a href="#"><i data-feather="linkedin"></i></a>
-              <a href="#"><i data-feather="instagram"></i></a>
-              <a href="#"><i data-feather="youtube"></i></a>
+              <a href="https://www.instagram.com/bikeloapp" target="_blank"><i data-feather="instagram"></i></a>
+              <a href="#demo" target=""><i data-feather="facebook"></i></a>
+              <a href="#demo" target=""><i data-feather="linkedin"></i></a>
             </div>
-          </div>
+</div>
           <div>
             <h3 class="footer-heading">Navegación</h3>
             <div class="footer-links">
@@ -108,6 +107,12 @@ class CustomFooter extends HTMLElement {
         </div>
       </footer>
     `;
+    // Reemplazar los iconos dentro del shadowRoot
+    this.shadowRoot.querySelectorAll('[data-feather]').forEach(icon => {
+      const name = icon.getAttribute('data-feather');
+      const svg = feather.icons[name]?.toSvg();
+      if (svg) icon.outerHTML = svg;
+    });
   }
 }
 customElements.define('custom-footer', CustomFooter);
